@@ -13,8 +13,7 @@ public class HomeController {
     @GetMapping
     public String index(Model model) {
         model.addAttribute("pageTitle", "Hello JVM world!");
-        model.addAttribute("languages", List.of("Java", "Kotlin", "Groovy", "Clojure"
-        ));
+        model.addAttribute("languages", List.of("Java", "Kotlin", "Groovy", "Clojure"));
         return "index";
     }
 }
